@@ -1,0 +1,25 @@
+<div class="container">
+	<h1 class="text-info">We loved with a love that was more than love.</h1>
+</div>
+
+
+<div class="container">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+
+        <div class="col-lg-4" ng-repeat="article in articles" style="height: 150px">
+          <div class="panel panel-success">
+		    <div class="panel-heading">
+                <h3 class="panel-title" style="text-align:center;">
+		        <a href="#~/articleDetail/{{article.id}}"> {{article.title}}</a>
+		      </h3>
+		    </div>
+		    <div class="panel-body" ng-bind-html="trust(article.summary)"> 
+		    </div>
+		  </div>
+        </div><!-- /.col-lg-4 -->
+
+      </div><!-- /.row -->
+
+</div>

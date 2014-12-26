@@ -1,0 +1,54 @@
+﻿﻿<style type="text/css">
+  .container {
+      margin: 0 auto;
+   }
+  .item {
+      float:left;
+      width:200px;
+      margin:10px; 
+      padding:10px;
+      margin-bottom:0px;
+      border:1px solid #e0e0e0;
+      background-color:#f0f0f0;
+      -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  }
+  .item .pic{
+      width:200px; 
+  }
+  .item .text{
+      display: inline-block;
+      background-color: rgba(221, 213, 213, 0.5);
+      padding: 10px;
+      width: 180px;
+      margin-top: 10px;
+  }
+  .item .pic img{
+     width: 180px;
+  }
+</style>
+
+<div id="container" class="container" data-toggle="modal" show-image></div>
+
+<!-- Modal -->
+<div class="modal fade" id="showModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+      </div>
+      <div class="modal-body">
+        <div>
+          <img ng-src="{{showImgPath}}" style="width:100%" />
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+

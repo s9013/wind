@@ -1,0 +1,206 @@
+/* common */
+body {
+    /*background-color: rgba(93, 85, 85, 0.38);*/
+}
+
+/* Skin */
+.skin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    zoom: 1;
+}
+
+/**********************************logo start***************************/
+#logo{
+    position:fixed;
+    width:40px;
+    height:40px;
+    top: 10px;
+    left:1%;
+    background-image:url(http://s.gravatar.com/avatar/116a3522e107c9ad24db7eea85d4b122?s=80);
+    background-size:40px 40px;
+    border-radius:100%;
+    animation:loop 2s ease-out 0s infinite;
+    -webkit-animation:loop 2s ease-out 0s infinite;
+    -moz-animation:loop 2s ease-out 0s infinite;
+}
+
+.container {
+    padding: 10px;
+}
+
+nav {
+    text-align: center;
+}
+nav>a {
+    color:red;
+    line-height: 29px;
+    background-color: black;
+    width: 38%;
+    font-size: 30px;
+}
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 600px;
+}
+
+
+/*****************************slider start****************************/
+#slider {
+    position:fixed;
+    left:-20px;
+    top:40%;
+    width:150px;
+    height:200px;
+    background:transparent;
+}
+#slider2 {
+    position:fixed;
+    background:#6f7b8a;
+    left:-145px;
+    top:40%;
+    width:150px;
+    height:200px;
+    -webkit-transition:left 1s;
+    -moz-transition:left 1s;
+}
+#slider:hover > #slider2 {
+    left:0px !important;
+}
+/*****************************slider end****************************/
+
+/*back*/
+#back{
+  position:fixed;
+  right:5%;
+  bottom:20px;
+  color:#28465C;
+  display:none;
+  cursor:pointer;
+}
+#back span{
+  font-size: 40px;
+}
+
+/*******************************timeline start***********************************/
+
+
+/*******************************timeline start***********************************/
+
+/*show start*/
+  .wall {
+      margin: 0 auto;
+   }
+  .wall .item {
+      float:left;
+      width:200px;
+      margin:10px; 
+      padding:10px;
+      margin-bottom:0px;
+      border-radius: 6px;
+      border:1px solid #e0e0e0;
+      background-color:transparent;
+      box-shadow: 0 0 6px #ccc;
+  }
+  .wall .item .pic{
+      width:200px; 
+  }
+  .wall .item .text{
+      display: inline-block;
+      background-color: rgba(221, 213, 213, 0.5);
+      padding: 10px;
+      width: 180px;
+      margin-top: 10px;
+      border-radius: 6px;
+      text-align: center;
+      color: #444;
+      font-size:18px;
+      font-weight:bold;
+  }
+  .wall .item .pic img{
+     width: 180px;
+     box-shadow: 0 0 6px #ccc;
+     border-radius: 4px;
+  }
+  .item .pic img:hover{
+    -webkit-animation:shade 3s ease-in-out 1;
+    -moz-animation:shade 3s ease-in-out 1;
+    -ms-animation:shade 3s ease-in-out 1;
+    -o-animation:shade 3s ease-in-out 1;
+    animation:shade 3s ease-in-out 1;
+  }
+  /* 定义关键帧 */
+  @-webkit-keyframes shade{
+    from{opacity:1;}
+    15%{opacity:0.5;}
+    to{opacity:1;}
+  }
+  @-moz-keyframes shade{
+    from{opacity:1;}
+    15%{opacity:0.5;}
+    to{opacity:1;}
+  }
+  @-ms-keyframes shade{
+    from{opacity:1;}
+    15%{opacity:0.5;}
+    to{opacity:1;}
+  }
+  @-o-keyframes shade{
+    from{opacity:1;}
+    15%{opacity:0.5;}
+    to{opacity:1;}
+  }
+  @keyframes shade{
+    from{opacity:1;}
+    15%{opacity:0.5;}
+    to{opacity:1;}
+  }
+/*show end*/
+
+/*spin*/
+.spin {
+  display:none; 
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0; 
+  right: 0;
+  background-color: #000000;
+  opacity:0.6;
+  filter: alpha(opacity=60);
+}
+.spin div {
+  position:fixed; 
+  top: 45%;
+  left:45%;
+  color:white;
+}

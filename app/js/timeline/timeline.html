@@ -1,0 +1,15 @@
+<div class="container">
+	<h1 class="text-info">时光轴 一路走来</h1>
+</div>
+
+<div class="container" iway-timeline-scroller>
+	<div iway-timeline-scroller>
+		<div  ng-repeat="item in timelineData">
+			<span>{{$index+1}}</span><br/>
+			<span>{{item.date}}</span><br/>
+			<span>{{item.title}}</span><br/>
+			<span>{{item.content}}</span>
+			<hr/>
+		</div>
+	</div>
+</div>
