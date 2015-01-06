@@ -60,6 +60,17 @@ define(['angular',"route",
 				.otherwise({
 						redirectTo : "/home"
 				});
-			}]);
+			}]).run([ "$rootScope", "$window", function($rootScope, $window) {
+
+						$rootScope.$on('$locationChangeSuccess', function(){
+
+							if(arguments[1].indexOf('plan') !== -1){
+								scroll(0,450);
+					        }else{
+					        	scroll(0,0);
+					        }  
+							
+						});  
+					} ]);
 
 });
